@@ -363,43 +363,119 @@ int Doubly_CLL::Count()
 
 int main()
 {
-	Doubly_CLL obj;
+	int iRet = 0,x = 0,Value = 0,pos = 0;
 	
-	int iRet = 0;
+	PNODE first = NULL;
 	
-	obj.InsertFirst(101);
-	obj.InsertFirst(51);
-	obj.InsertFirst(21);
-	obj.InsertFirst(11);
-	obj.InsertFirst(1);
+	while(1)
+	{	
+		printf("\n\n\n***************************Welcome***************************\n");
+		printf("Enter \n1 : Insert at first position\t2 : Insert at Last\n3 : Delete at first \t\t4 : Delete at Last\n5 : Insert at position\t\t6 : Delete at postion\n7 : Display and Count\t \t8 : Exit\n\n\n");
+
+		scanf("%d",&x);
+		
+		switch(x)
+		{
+			case 1:
+				printf("Enter Number :");
+				scanf("%d",&Value);
+				
+				Insertfirst(&first,Value);
+				
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 2:
+				printf("Enter Number :");
+				scanf("%d",&Value);
+				
+				InsertLast(&first,Value);
+				
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 3:
+				DeleteFirst(&first);
+
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 4:
+				DeleteLast(&first);
+
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 5:
+				printf("Enter Number : ");
+				scanf("%d",&Value);
+				
+				printf("Enter Position : ");
+				scanf("%d",&pos);
+				
+				InsertAtPos(&first,Value,pos);
+
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 6:
+				printf("Enter Position : ");
+				scanf("%d",&pos);
+				
+				DeleteAtPos(&first,pos);
+
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+				
+			case 7:
+				Display(first);
+				
+				iRet = Count(first);
+				printf("Number of Elements in List are : %d",iRet);
+				
+				break;
+			
+			case 8:
+				exit(1);
+				
+				break;
+				
+			default:
+				printf("Invalid Input");
+				
+		}
+	}
 	
-	
-	obj.InsertLast(151);
-	obj.InsertLast(201);
-	obj.InsertLast(251);
-	
-	obj.DeleteFirst();
-	obj.DeleteLast();
-	
-	obj.InsertAtPos(0,1);
-	obj.InsertAtPos(501,10);
-	obj.InsertAtPos(75,5);
-	
-	obj.Display();
-	iRet = obj.Count();
-	
-	cout<<"No of nodes are : "<<iRet<<endl;
-	
-	obj.DeleteAtPos(1);
-	obj.DeleteAtPos(10);
-	obj.DeleteAtPos(4);
-	
-	obj.Display();
-	obj.DisplayRev();
-	
-	iRet = obj.Count();
-	
-	cout<<"No of nodes are : "<<iRet<<endl;
+	printf("Thanku\n");
 	
 	return 0;
 }
