@@ -48,7 +48,7 @@ Doubly_CLL::Doubly_CLL()
 //  Output: void
 //  Description : Inserts node in DOUBLY CIRCULAR LINKED LIST at 1st position
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -86,7 +86,7 @@ void Doubly_CLL::InsertFirst(int no)
 //  Output: void
 //  Description : Inserts node in DOUBLY CIRCULAR LINKED LIST at LAST position
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -126,7 +126,7 @@ void Doubly_CLL::InsertLast(int no)
 //				  Inserts node in DOUBLY CIRCULAR LINKED LIST at iPos position
 //
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -173,7 +173,7 @@ void Doubly_CLL::InsertAtPos(int no, int iPos)
 //  Output: void
 //  Description : Deletes node in DOUBLY CIRCULAR LINKED LIST at 1st position
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -204,7 +204,7 @@ void Doubly_CLL::DeleteFirst()
 //  Output: void
 //  Description : Deletes node in DOUBLY CIRCULAR LINKED LIST at last position
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -239,7 +239,7 @@ void Doubly_CLL::DeleteLast()
 //				  Deletes node in DOUBLY CIRCULAR LINKED LIST at iPos position
 //
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -280,7 +280,7 @@ void Doubly_CLL::DeleteAtPos(int iPos)
 //  Output: void
 //  Description : Displays all node in DOUBLY CIRCULAR LINKED LIST 
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -305,7 +305,7 @@ void Doubly_CLL::Display()
 //  Output: void
 //  Description : Displays all node in DOUBLY CIRCULAR LINKED LIST in reveresed Manner
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -330,7 +330,7 @@ void Doubly_CLL::DisplayRev()
 //  Output: Integer
 //  Description : Counts no of nodes in DOUBLY CIRCULAR LINKED LIST
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -357,7 +357,7 @@ int Doubly_CLL::Count()
 //  Output: Integer
 //  Description : Can create and manipulate DOUBLY CIRCULAR LINKED LIST
 //  Author : Kaushal Sachin Kapadnis
-//	Date : 26-6-2022
+//  Date : 26-6-2022
 //
 ///////////////////////////////////////////////////////////////////////////
 
